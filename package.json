@@ -1,0 +1,23 @@
+{
+  "name": "serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "upload": "yarn upload-fetchers && yarn upload-transformers && yarn upload-hubdb",
+    "upload-fetchers": "hs upload fetchers.functions Crypto/serverless/fetchers.functions",
+    "upload-transformers": "hs upload transformers.functions Crypto/serverless/transformers.functions",
+    "upload-hubdb": "hs upload hubdb.functions Crypto/serverless/hubdb.functions",
+    "watch": "hs watch . Crypto",
+    "start-fetchers": "hs functions server fetchers.functions",
+    "start-transformers": "hs functions server transformers.functions",
+    "start-hubdb": "hs functions server hubdb.functions",
+    "deploy-fetchers": "hs functions deploy Crypto/serverless/fetchers.functions",
+    "deploy-transformers": "hs functions deploy Crypto/serverless/transformers.functions",
+    "deploy-hubdb": "hs functions deploy Crypto/serverless/hubdb.functions",
+    "deploy": "yarn deploy-fetchers && yarn deploy-transformers && yarn deploy-hubdb",
+    "upload-and-deploy": "yarn upload; yarn deploy;"
+  },
+  "author": "",
+  "license": "ISC"
+}

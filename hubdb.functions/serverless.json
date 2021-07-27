@@ -1,0 +1,12 @@
+{
+  "runtime": "nodejs12.x",
+  "version": "1.0",
+  "environment": {},
+  "secrets": ["hapikey"],
+  "endpoints": {
+    "hubdb": {
+      "method": "POST",
+      "file": "index.js"
+    }
+  }
+}

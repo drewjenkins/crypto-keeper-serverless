@@ -1,0 +1,12 @@
+{
+  "runtime": "nodejs12.x",
+  "version": "1.0",
+  "environment": {},
+  "secrets": [],
+  "endpoints": {
+    "transform-prices": {
+      "method": "POST",
+      "file": "index.js"
+    }
+  }
+}
